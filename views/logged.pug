@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title="main-auth!"
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600', rel='stylesheet')
+        link(rel='stylesheet', type='text/css', href='/styles/first-template.css')
+    body
+
+        section.loginForm
+            form(action='/' method='POST').form
+                if(user)
+                    h1.welcome Welcome back,  #{user.displayName}
